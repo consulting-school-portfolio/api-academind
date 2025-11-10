@@ -4,6 +4,7 @@
   "description": "A Node.js RESTful API Tutorial Project (Build a simple shop API)",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon server.js",
     "test:api": "newman run collection.json --environment env.json",
     "test:api:report": "newman run collection.json --environment env.json -r htmlextra --reporter-htmlextra-export ./reports/api-report.html",
     "test:api:dev": "newman run collection.json --environment env.dev.json",
@@ -19,7 +20,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.2",
-    "newman-reporter-htmlextra": "^1.23.1"
-  },
-  "devDependencies": {}
+    "newman-reporter-htmlextra": "^1.23.1",
+    "nodemon": "^3.1.10"
+  }
 }
